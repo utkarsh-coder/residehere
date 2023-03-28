@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/include_update"
+            layout="@layout/details_update_toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/include_update">
+
+            <TextView
+                android:id="@+id/name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/name_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_textView"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/phone_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_editText"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:text="Contact No."
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/phone_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_textView"
+                android:enabled="false"
+                android:inputType="phone"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/email_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_editText"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:text="Email"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/email_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_textView"
+                android:inputType="textEmailAddress"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/address_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_editText"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:text="Address"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/address_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_textView"
+                android:inputType="textEmailAddress"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

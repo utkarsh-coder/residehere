@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "435903129701",
+    "project_id": "residehere-242ac",
+    "storage_bucket": "residehere-242ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435903129701:android:3d4bdb92996a059004be8c",
+        "android_client_info": {
+          "package_name": "com.example.residehere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435903129701-sq20dhq1c56vubppntbjchs4gdktg5r3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.residehere",
+            "certificate_hash": "1b1e3ecb9000d1899b1dc42d536f30affa56d601"
+          }
+        },
+        {
+          "client_id": "435903129701-t5svp4apvuji5raevu28fe6d3e6kgg5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfRcOO5XddUnzL9wmi-tB460hMliuMSbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435903129701-t5svp4apvuji5raevu28fe6d3e6kgg5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

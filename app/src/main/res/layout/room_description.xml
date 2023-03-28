@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textSize="20dp"
+            android:text="Room Name"/>
+
+        <TextView
+            android:id="@+id/room_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_name"
+            android:layout_alignStart="@+id/room_name"
+            android:textSize="15dp"
+            android:text="AC"/>
+        <TextView
+            android:id="@+id/room_ab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/room_ac"
+            android:layout_alignStart="@+id/room_ac"
+            android:textSize="15dp"
+            android:text="AB"/>
+        <TextView
+            android:id="@+id/room_seater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/room_ab"
+            android:layout_alignStart="@id/room_ab"
+            android:textSize="15dp"
+            android:text="seater"/>
+
+        <TextView
+            android:id="@+id/room_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:hint="price"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/book_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="Book room" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

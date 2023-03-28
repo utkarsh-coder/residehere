@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/logo"
+        android:icon="@drawable/my_account"
+        android:title="" />
+
+    <item
+        android:id="@+id/my_account"
+        android:icon="@drawable/my_account"
+        android:title="" />
+
+    <item
+        android:id="@+id/payment_history"
+        android:icon="@drawable/maintain_account"
+        android:title="" />
+
+    <item
+        android:id="@+id/living_history"
+        android:icon="@drawable/maintain_account"
+        android:title="" />
+</menu>

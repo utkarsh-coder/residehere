@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/booking_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Booking status"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/royal_blue_medium"/>
+
+        <TextView
+            android:id="@+id/pg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PG Name"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/booking_status"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pg_name"
+            android:textSize="15dp"
+            android:layout_alignStart="@+id/pg_name"
+            android:textColor="@color/black"
+            android:text="Rom Name"/>
+
+        <Button
+            android:id="@+id/payment_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/room_name"
+            android:layout_alignParentBottom="true"
+            android:text="Pay for next 30 days"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/starting_timestamp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_name"
+            android:layout_alignStart="@+id/room_name"
+            android:layout_marginTop="20dp"
+            android:text="Joining date: "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/starting_timestamp_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/starting_timestamp_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="timstamp here"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/booking_timestamp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/starting_timestamp_text"
+            android:layout_alignStart="@+id/room_name"
+            android:text="Booking Time: "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/booking_timestamp_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/booking_timestamp_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="timstamp here"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/ending_timestamp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/booking_timestamp_text"
+            android:layout_alignStart="@+id/room_name"
+            android:text="Checkout date: "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/ending_timestamp_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ending_timestamp_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="timestamp here"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/resider_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ending_timestamp_text"
+            android:layout_alignStart="@+id/room_name"
+            android:text="Resider Name:  "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/resider_name_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/resider_name_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="Resider Name here"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/resider_contact_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resider_name_text"
+            android:layout_alignStart="@+id/room_name"
+            android:text="Resider Contact:  "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/resider_contact_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/resider_contact_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="Resider Contact here"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:text="->" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

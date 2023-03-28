@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_front_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/front_view_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/reside_here_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_front_view_below"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/royal_blue_medium"
+            android:layout_below="@+id/relative_front_view">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/front_view_background_below"
+                android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar_main_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_below="@+id/relative_front_view_below"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/progress_bar_main_activity"
+            android:layout_centerVertical="true">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:ccp_areaCodeDetectedCountry="true"
+                app:ccp_autoDetectCountry="true" />
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ccp"
+                android:layout_alignBottom="@+id/ccp"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/ccp"
+                android:hint="Enter Phone number"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/error_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ccp"
+                android:visibility="invisible"
+                android:textColor="@color/red"
+                android:textSize="10dp"
+                android:text="Mobile no. should exactly have 10 digits"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/error_textView"
+                android:enabled="false"
+                android:layout_marginTop="35dp"
+                android:text="Get OTP" />
+
+            <TextView
+                android:id="@+id/textViewCustomerLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/submitBtn"
+                android:layout_marginTop="40dp"
+                android:text="Want to visit resideHere partner app ?"
+                android:textAlignment="center"
+                android:textColor="@color/royal_blue_medium" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
